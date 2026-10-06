@@ -1,0 +1,7 @@
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowSplashScreenBackground">@color/trackyo_icon_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_trackyo_splash</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+</resources>
