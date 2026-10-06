@@ -7366,7 +7366,7 @@ class TrackYoTheme {
         titleTextStyle: TextStyle(
             color: scheme.onSurface, fontSize: 19, fontWeight: FontWeight.w800),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: scheme.surface,
         elevation: 0,
         margin: EdgeInsets.zero,
