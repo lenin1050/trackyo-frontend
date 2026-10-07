@@ -365,7 +365,7 @@ class ApiService {
         response = await (client?.get(uri, headers: headers) ??
                 http.get(uri, headers: headers))
             .timeout(
-          const Duration(seconds: 15),
+          const Duration(seconds: 45),
         );
       } else if (method == 'POST') {
         response = await (client?.post(
