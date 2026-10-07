@@ -374,7 +374,7 @@ class ApiService {
                   body: jsonEncode(body ?? {}),
                 ) ??
                 http.post(uri, headers: headers, body: jsonEncode(body ?? {})))
-            .timeout(const Duration(seconds: 15));
+            .timeout(const Duration(seconds: 45));
       } else if (method == 'PUT') {
         response = await (client?.put(
                   uri,
@@ -382,11 +382,11 @@ class ApiService {
                   body: jsonEncode(body ?? {}),
                 ) ??
                 http.put(uri, headers: headers, body: jsonEncode(body ?? {})))
-            .timeout(const Duration(seconds: 15));
+            .timeout(const Duration(seconds: 45));
       } else if (method == 'DELETE') {
         response = await (client?.delete(uri, headers: headers) ??
                 http.delete(uri, headers: headers))
-            .timeout(const Duration(seconds: 15));
+            .timeout(const Duration(seconds: 45));
       } else {
         throw UnsupportedError('Unsupported HTTP method $method');
       }
