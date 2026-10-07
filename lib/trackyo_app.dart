@@ -342,7 +342,7 @@ class ApiService {
     if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
       return 'http://192.168.0.2:5000';
     }
-    return 'http://localhost:5000';
+    return 'https://trackyo-backend.onrender.com';
   }
 
   static Future<dynamic> _request(
