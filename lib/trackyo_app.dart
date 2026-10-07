@@ -303,7 +303,7 @@ class AnalyticsSummary {
 class ApiService {
   static const String _productionApiBaseUrl = String.fromEnvironment(
     'TRACKYO_API_BASE_URL',
-    defaultValue: 'https://trackyo-project1.onrender.com',
+    defaultValue: 'https://trackyo-backend.onrender.com',
   );
   static AuthTokenStore tokenStore = const SecureAuthTokenStore();
   static VoidCallback? onUnauthorized;
